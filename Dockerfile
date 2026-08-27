@@ -1,18 +1,20 @@
-# Usa uma imagem oficial do OpenResty com LuaRocks já instalada
-FROM openresty/openresty:alpine
+# Usa uma imagem do OpenResty que já vem com LuaRocks instalado de fábrica
+FROM mileschou/openresty:alpine
 
-# Instala o framework Lapis e dependências de rede
-RUN apk add --no-cache openssl-dev build-base \
-    && luarocks install lapis
+# Instala as dependências de criptografia necessárias para o Lapis
+RUN apk add --no-cache openssl-dev build-base
 
-# Cria a pasta do site dentro do servidor da nuvem
+# Instala o framework Lapis
+RUN luarocks install lapis
+
+# Cria e define a pasta do projeto
 WORKDIR /app
 
-# Copia os arquivos da sua pasta no PC para dentro da nuvem
+# Copia os arquivos do repositório para o servidor
 COPY . .
 
-# Expõe a porta de internet que configuramos
+# Libera a porta de internet
 EXPOSE 80
 
-# Comando para iniciar o site de forma definitiva
+# Inicia o servidor do site
 CMD ["lapis", "server"]
