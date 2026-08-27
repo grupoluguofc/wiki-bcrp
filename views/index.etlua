@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki - Blox City RP</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #121214; color: #e1e1e6; margin: 0; padding: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; }
+        .container { background: #202024; border: 1px solid #323238; padding: 40px; border-radius: 12px; max-width: 600px; width: 90%; text-align: center; box-shadow: 0 8px 24px rgba(0,0,0,0.5); }
+        h1 { color: #00adb5; font-size: 2.5rem; margin-bottom: 10px; }
+        p { color: #a8a8b3; font-size: 1.1rem; line-height: 1.6; }
+        .nav-links { margin-top: 30px; display: flex; gap: 15px; justify-content: center; }
+        .btn { background: #00adb5; color: #fff; text-decoration: none; padding: 12px 24px; border-radius: 6px; font-weight: bold; transition: background 0.2s; }
+        .btn:hover { background: #007a80; }
+        footer { margin-top: 40px; color: #7c7c8a; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Blox City RP 🏙️</h1>
+        <p>Bem-vindo à Wiki oficial do nosso servidor do Roblox! Aqui você encontra todas as diretrizes, comandos e sistemas para fazer o melhor Roleplay.</p>
+        
+        <div class="nav-links">
+            <a href="/wiki/regras" class="btn">📜 Regras Gerais</a>
+            <a href="/wiki/comandos" class="btn">💻 Comandos do Chat</a>
+        </div>
+    </div>
+    <footer>Wiki-BCRP © 2026</footer>
+</body>
+</html>
